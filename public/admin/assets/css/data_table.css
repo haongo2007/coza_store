@@ -1,0 +1,17 @@
+.table td{
+    white-space: normal;
+    vertical-align: middle;
+}
+.table th,td{
+    text-align: center;
+}
+.bootstrap-tagsinput:nth-of-type(2){
+	border: 1px solid;
+	width: 100%;
+}
+.error{
+	margin-bottom: 0;
+}
+.required{
+	color: #fb6340;
+}

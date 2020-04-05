@@ -1,0 +1,12 @@
+<!-- sidebar -->
+<?php $this->load->view($path.'/home/sidebar'); ?>
+<!-- Cart -->
+<?php $this->load->view($path.'/home/cart'); ?>
+<!-- Slider -->
+<?php $this->load->view($path.'/home/slider'); ?>
+<!-- Banner -->
+<?php $this->load->view($path.'/home/banner'); ?>
+<!-- Product -->
+<?php $this->load->view($path.'/home/product'); ?>
+<!-- blog -->
+<?php $this->load->view($path.'/home/blog'); ?>

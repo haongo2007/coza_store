@@ -1,0 +1,55 @@
+function create(){			
+			$data = array();
+			$data['username'] = 'admin1';
+			$data['password'] = 'admin1';
+			$data['name']	  = 'haongo';
+			
+			if ($this->admin_model->create($data)) {
+				echo "Thêm Thành Công";
+			}
+			else{
+				echo "thêm không thành công";
+			}
+		}
+		function update(){
+			$id = '8';
+			$data = array();
+			$data['username'] = 'admin2';
+			$data['password'] = 'admin2';
+			$data['name']	  = 'haongo2';
+
+			if ($this->admin_model->update($id,$data)) {
+				echo "Cập Nhật thành công";
+			}
+			else{
+				echo "Lỗi Cập nhật không thành công";
+			}
+		}
+		
+		function delete(){
+			$id = '9';
+			if ($this->admin_model->delete($id)) {
+				echo "Xóa thành công";
+			}
+			else{
+				echo "Xóa thất bại";
+			}
+		}
+
+		function get_info(){
+			$id = 1;
+			$info = $this->admin_model->get_info($id,'username,password');
+			echo '<pre>';
+			print_r($info);
+		}
+
+		function get_list(){
+			$input = array();
+			//$input['where'] = array('id' => 1);
+			//$input['order'] = array('username','asc');
+			//$input['limit'] = array(1,0);
+			//$input['like'] = array('name','uy');
+			$list = $this->admin_model->get_list($input);
+			echo "<pre>";
+			print_r($list);
+		}
